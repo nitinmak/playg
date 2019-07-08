@@ -1,0 +1,48 @@
+
+body {font-family: Arial;}
+
+.tab {
+  clear: both;
+  color: white;
+  overflow: hidden;
+  border: 1px solid #131833;
+  background-color: #131833;
+
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+.tab button:hover {
+  background-color: #131833;
+}
+
+
+.tab button.active {
+  background-color: #050b2b;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+
+#flex {
+  
+  height: 50px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+#flex div:nth-of-type(1) {flex-grow: 1;}

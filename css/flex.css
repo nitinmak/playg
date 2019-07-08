@@ -1,0 +1,40 @@
+.header-container{
+	display: flex;
+	background-color: black;
+	width: 100%;
+}
+
+.promo-container{
+	display: flex;
+	width: 100%;
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.image-container > div{
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+}
+
+.btn-container{
+	display: flex;
+	width: 100%;
+	flex-flow: column;
+}
+
+.wrap1{
+	padding-bottom: 5%;
+}
+
+@media screen and (max-width: 768px){
+	.header-container{margin-top: 23pt;}
+}
+
+@media screen and (max-width: 360px){
+	.wrap1{padding-bottom: 18%;}
+}
