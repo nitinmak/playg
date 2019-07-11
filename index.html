@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+
+    <!-- Required meta tags-->
+  <!--   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no"> -->
+
+    <!-- Your app title -->
+    <title>My App</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+
+    <link rel="stylesheet" href="login/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="login/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<style type="text/css">
+    .navbar:after{
+        display: none;
+    }
+</style>
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>Left panel content goes here</p>
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <!-- <div class="navbar">
+                <div class="navbar-inner">
+               
+                    <div class="center sliding">Awesome App</div>
+                    <div class="right">
+                      
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through" style="overflow: scroll;">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page" style="background-color: #131833!important; text-align: center!important;">
+                    <!-- Scrollable page content -->
+                    <div class="page-content" style="padding: 0px">
+                        <div class="content-block" style="margin: 0px;">
+                            <div class="menu_side">
+                               <div class="snackbar">Some text some message..</div>
+                            </div>
+
+                            <main role="main" class="container" style="padding: 0px;">
+<div class="row">
+
+<!--ticket start-->
+<div class="mbhead"></div>
+<div class="col-md-6">       
+<center>
+      <div class="card" id="headimg" style="text-align: center; margin-top: 10px;">
+      <div style="padding: 11px 0px;">
+      <div style="width: 100%;height: 50px; margin:auto;">
+          <div style="float: left; width: 22%;height: 100%;">
+            <img src="images/insta.png" alt="insta"   style="border-radius: 50%; height:50px; width:50px";>
+          </div>
+          <div style="float: left;width: 78%;height: 100%;" >
+            <p class="tich1">Night Turnament - match #54</p>
+            <p class="tich2">time: 09/04/2019 at 10:30 pm</p>  
+          </div>
+      </div> 
+    
+     <table>
+        <tr>
+          <td>WIN PRIZE</td>
+          <td>PER KILL</td>
+          <td>ENTRY FEE</td>
+       </tr>
+        <tr>
+          <th>₹100</th>
+          <th>₹5</th>
+          <th>₹10</th>
+        </tr>
+        <tr>
+          <td>TYPE</td>
+          <td>VERSION</td>
+          <td>MAP</td>
+        </tr>
+        <tr>
+          <th>Squad</th>
+          <th>TTP</th>
+          <th>Erangel</th>
+        </tr>
+     </table>
+  
+    <div class="col-md-12 col-sm-12" style="text-align: right;">
+  
+            
+         </div>
+        </div>
+    <div style="width: 90%;height: 50px;margin:auto;">
+        <div style="float: left;width: 70%;" >
+          <div style="float: left; width: 100%;" >
+             <div class="progress" style="margin: 3% 0%;width: 94%;height: 4px;">
+                 <div class=" progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width:77%; background-color: black !important" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+          </div>
+
+          <div style="float: left;width: 93%;margin-top: -5pt;" >
+            <div style="float: left; width:50%;"><p style="position: absolute;color:black;margin-left: 1%; text-align: left; font-size: 12px;">only 23 spot left</p>
+            </div>
+            <div style="float: right; width:50%;"><p style="color:black; margin-right: 4%; margin-top: 2px; text-align:right; font-size: 12px;">77/100</p>
+            </div>
+          </div>
+        </div>
+    
+         <div style="float: left; width: 24%;"><p style="text-align: center;border: 1px solid black;border-radius: 3px;padding: 5px 0px;margin: 1pt -3pt;font-size: small;"><a href="" style="text-decoration: none;color: black;">JOIN</a></p>
+        </div>
+      
+    </div>
+</center> 
+</div>
+
+<!--Ticket end-->
+
+<!--ticket start-->
+<div class="col-md-6">       
+<center>
+      <div class="card" id="headimg" style="text-align: center; margin-top: 10px;">
+      <div style="padding: 11px 0px;">
+      <div style="width: 100%;height: 50px; margin:auto;">
+          <div style="float: left; width: 22%;height: 100%;">
+            <img src="images/insta.png" alt="insta"   style="border-radius: 50%; height:50px; width:50px";>
+          </div>
+          <div style="float: left;width: 78%;height: 100%;" >
+            <p class="tich1">Night Turnament - match #54</p>
+            <p class="tich2">time: 09/04/2019 at 10:30 pm</p>  
+          </div>
+      </div> 
+    
+     <table>
+        <tr>
+          <td>WIN PRIZE</td>
+          <td>PER KILL</td>
+          <td>ENTRY FEE</td>
+       </tr>
+        <tr>
+          <th>₹100</th>
+          <th>₹5</th>
+          <th>₹10</th>
+        </tr>
+        <tr>
+          <td>TYPE</td>
+          <td>VERSION</td>
+          <td>MAP</td>
+        </tr>
+        <tr>
+          <th>Squad</th>
+          <th>TTP</th>
+          <th>Erangel</th>
+        </tr>
+     </table>
+  
+    <div class="col-md-12 col-sm-12" style="text-align: right;">
+  
+            
+         </div>
+        </div>
+    <div style="width: 90%;height: 50px;margin:auto;">
+        <div style="float: left;width: 70%;" >
+          <div style="float: left; width: 100%;" >
+             <div class="progress" style="margin: 3% 0%;width: 94%;height: 4px;">
+                 <div class=" progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width:77%; background-color: black !important" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+          </div>
+
+          <div style="float: left;width: 93%;margin-top: -5pt;" >
+            <div style="float: left; width:50%;"><p style="position: absolute;color:black;margin-left: 1%; text-align: left; font-size: 12px;">only 23 spot left</p>
+            </div>
+            <div style="float: right; width:50%;"><p style="color:black; margin-right: 4%; margin-top: 2px; text-align:right; font-size: 12px;">77/100</p>
+            </div>
+          </div>
+        </div>
+    
+         <div style="float: left; width: 24%;"><p style="text-align: center;border: 1px solid black;border-radius: 3px;padding: 5px 0px;margin: 1pt -3pt;font-size: small;"><a href="" style="text-decoration: none;color: black;">JOIN</a></p>
+        </div>
+      
+    </div>
+</center> 
+</div>
+<!--Ticket end-->
+
+<!--ticket start-->
+<div class="col-md-6">       
+<center>
+      <div class="card" id="headimg" style="text-align: center; margin-top: 10px;">
+      <div style="padding: 11px 0px;">
+      <div style="width: 100%;height: 50px; margin:auto;">
+          <div style="float: left; width: 22%;height: 100%;">
+            <img src="images/insta.png" alt="insta"   style="border-radius: 50%; height:50px; width:50px";>
+          </div>
+          <div style="float: left;width: 78%;height: 100%;" >
+            <p class="tich1">Night Turnament - match #54</p>
+            <p class="tich2">time: 09/04/2019 at 10:30 pm</p>  
+          </div>
+      </div> 
+    
+     <table>
+        <tr>
+          <td>WIN PRIZE</td>
+          <td>PER KILL</td>
+          <td>ENTRY FEE</td>
+       </tr>
+        <tr>
+          <th>₹100</th>
+          <th>₹5</th>
+          <th>₹10</th>
+        </tr>
+        <tr>
+          <td>TYPE</td>
+          <td>VERSION</td>
+          <td>MAP</td>
+        </tr>
+        <tr>
+          <th>Squad</th>
+          <th>TTP</th>
+          <th>Erangel</th>
+        </tr>
+     </table>
+  
+    <div class="col-md-12 col-sm-12" style="text-align: right;">
+  
+            
+         </div>
+        </div>
+    <div style="width: 90%;height: 50px;margin:auto;">
+        <div style="float: left;width: 70%;" >
+          <div style="float: left; width: 100%;" >
+             <div class="progress" style="margin: 3% 0%;width: 94%;height: 4px;">
+                 <div class=" progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width:77%; background-color: black !important" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+          </div>
+
+          <div style="float: left;width: 93%;margin-top: -5pt;" >
+            <div style="float: left; width:50%;"><p style="position: absolute;color:black;margin-left: 1%; text-align: left; font-size: 12px;">only 23 spot left</p>
+            </div>
+            <div style="float: right; width:50%;"><p style="color:black; margin-right: 4%; margin-top: 2px; text-align:right; font-size: 12px;">77/100</p>
+            </div>
+          </div>
+        </div>
+    
+         <div style="float: left; width: 24%;"><p style="text-align: center;border: 1px solid black;border-radius: 3px;padding: 5px 0px;margin: 1pt -3pt;font-size: small;"><a href="" style="text-decoration: none;color: black;">JOIN</a></p>
+        </div>
+      
+    </div>
+</center> 
+</div>
+<!--Ticket end-->
+
+<!--ticket start-->
+<div class="col-md-6">       
+<center>
+      <div class="card" id="headimg" style="text-align: center; margin-top: 10px;">
+      <div style="padding: 11px 0px;">
+      <div style="width: 100%;height: 50px; margin:auto;">
+          <div style="float: left; width: 22%;height: 100%;">
+            <img src="images/insta.png" alt="insta"   style="border-radius: 50%; height:50px; width:50px";>
+          </div>
+          <div style="float: left;width: 78%;height: 100%;" >
+            <p class="tich1">Night Turnament - match #54</p>
+            <p class="tich2">time: 09/04/2019 at 10:30 pm</p>  
+          </div>
+      </div> 
+    
+     <table>
+        <tr>
+          <td>WIN PRIZE</td>
+          <td>PER KILL</td>
+          <td>ENTRY FEE</td>
+       </tr>
+        <tr>
+          <th>₹100</th>
+          <th>₹5</th>
+          <th>₹10</th>
+        </tr>
+        <tr>
+          <td>TYPE</td>
+          <td>VERSION</td>
+          <td>MAP</td>
+        </tr>
+        <tr>
+          <th>Squad</th>
+          <th>TTP</th>
+          <th>Erangel</th>
+        </tr>
+     </table>
+  
+    <div class="col-md-12 col-sm-12" style="text-align: right;">
+  
+            
+         </div>
+        </div>
+    <div style="width: 90%;height: 50px;margin:auto;">
+        <div style="float: left;width: 70%;" >
+          <div style="float: left; width: 100%;" >
+             <div class="progress" style="margin: 3% 0%;width: 94%;height: 4px;">
+                 <div class=" progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width:77%; background-color: black !important" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+             </div>
+          </div>
+
+          <div style="float: left;width: 93%;margin-top: -5pt;" >
+            <div style="float: left; width:50%;"><p style="position: absolute;color:black;margin-left: 1%; text-align: left; font-size: 12px;">only 23 spot left</p>
+            </div>
+            <div style="float: right; width:50%;"><p style="color:black; margin-right: 4%; margin-top: 2px; text-align:right; font-size: 12px;">77/100</p>
+            </div>
+          </div>
+        </div>
+    
+         <div style="float: left; width: 24%;"><p style="text-align: center;border: 1px solid black;border-radius: 3px;padding: 5px 0px;margin: 1pt -3pt;font-size: small;"><a href="" style="text-decoration: none;color: black;">JOIN</a></p>
+        </div>
+      
+    </div>
+</center> 
+</div>
+<!--Ticket end-->
+
+<div style="padding: 25pt"><div>
+   </main>
+
+   <div class="footer_link"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+           <!--  <div class="toolbar">
+                <div class="toolbar-inner">
+                    Toolbar links
+                    <a href="#" class="link">Link 1</a>
+                    <a href="#" class="link">Link 2</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+     <!-- <script src="js/jquery-3.3.1.slim.min.js"></script> -->
+    <script src="js/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+     <script>
+                         function my_toast(){
+    $('.snackbar').css('visibility','visible');
+    $('.snackbar').css('z-index','9999999999999');
+    $('.snackbar').css('font-size','14px');
+  setTimeout(function(){ $('.snackbar').css('visibility','hidden'); }, 3000);
+}
+        $(document).ready(function() {
+          $(".menu_side").load("menu.html"); 
+          $(".footer_link").load("footer.html"); 
+      })
+         
+        
+    </script>
+</body>
+
+</html>

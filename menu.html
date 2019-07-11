@@ -1,0 +1,74 @@
+<div class="loader" style="display: none;"></div>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #131833 !important; z-index: 1;">
+ 
+
+ <!--mobile menu-->
+
+ <div  id="mysidebar" class="sidebar mySidebar">
+  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
+  <a  href="login.html"  >Login</a>
+  <a  href="register.html">SignUp</a> 
+  <a href="index.html">Home </a>
+  <a href="gamerule.html">GameRule</a>
+  <a href="howtojoin.html">How to Join</a>
+  <a href="howtoplay.html">How to Pay</a>
+  <a href="joininroom.html">Join in Room</a>
+  <a href="about.html" tabindex="-1">About Us</a>
+</div>
+
+<div class="mainn" id="main" style="width: 100%;background-color: #131833;left: 0;" align="left">
+  <div style="float: left; width: 70%">
+  <button class="openbtn" onclick="openNav()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <span style="color: white; font-size: 28px;">&nbsp; WorldGame</span></div>
+  <div style="float: right; width: 25%; text-align: left; margin-top: 5pt;">
+    <span class="balance">₹90</span> </div>
+</div>
+<!--mobile menu end-->
+
+<!--main menu-->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gamerule.html">GameRule</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="howtojoin.html">How to Join</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="howtoplay.html">How to Pay</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="joininroom.html">Join in Room</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html" tabindex="-1">About Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    
+    <a href="login.html" class="btn btn-outline-primary my-2 my-sm-0" role="button" aria-disabled="true">Login</a>&nbsp;&nbsp;
+    <a href="register.html" class="btn btn-outline-danger my-2 my-sm-0 " role="button" aria-disabled="true">SignUp</a>
+    
+    </form>
+  </div>
+  <!--main menu end-->
+</nav>
+<script type="text/javascript">
+    function openNav() {
+            $(".mySidebar").css('width',"250px");
+            $(".mainn").css('margin-left',"0px");
+            }
+
+            function closeNav() {
+            $(".mySidebar").css('width', "0px");
+            $(".openbtn").css('marginLeft',"-7px");
+                
+            $(".mainn").css('marginLeft',"0px");
+            }
+</script>
